@@ -47,6 +47,8 @@ DECLARE_UART(mvebu);
 DECLARE_UART(pl011);
 DECLARE_UART(scifa);
 DECLARE_UART(xuartps);
+DECLARE_UART(stm32);
+
 
 struct uart_chip *uart_array[] = {
 	&UART_OPS_NAME(8250),
@@ -57,5 +59,6 @@ struct uart_chip *uart_array[] = {
 	&UART_OPS_NAME(pl011),
 	&UART_OPS_NAME(scifa),
 	&UART_OPS_NAME(xuartps),
+	&UART_OPS_NAME(stm32),
 	NULL
 };
